@@ -1,2 +1,2 @@
 #!/bin/bash
-grep bin < ~/test >&2
+grep bin < $1 >&2
