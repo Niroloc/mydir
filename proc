@@ -1,0 +1,6 @@
+#!/bin/bash
+echo 'Процессов пользователя'
+whoami
+ps axu | grep $USER | wc | tr -s ' ' ' ' | cut -d ' ' -f2
+echo 'Процессов пользователя root'
+ps axu | grep root | wc | tr -s ' ' ' ' | cut -d ' ' -f2
